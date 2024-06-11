@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --cordefundo: #2E0787;
+    --corletramain: #233ED9;
+    --corletralogin: #263DBF;
+    --corlogin: #5F72D9;
+    --corletra: #F2F2F2;
+    --corbotao: #0C0791;
+    --corletrabotao: #001D7A; 
+    --corinput: #0C0791;
+}
+
+body{
+    margin: 0;
+    font-family: 'Noto sans', sans-serif;
+}
+
+body *{
+    box-sizing: border-box;
+}
+
+.main-login{
+    width: 100vw;
+    height: 100vh;
+    background: var(--cordefundo);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-login{
+    width: 50vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-login > h1{
+    font-size: 3vh;
+    color: var(--corletramain);
+}
+
+img{
+    width: 22vw;
+}
+
+.right-login{
+    width: 100vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #2E0787;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.card-login > h1{
+    color: var(--corlogin);
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.textfield > input{
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: var(--corlogin);
+    color: var(--corletramain);
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield >label{
+    color: var(--corlogin);
+    margin-bottom: 10px;
+}
+
+::placeholder{
+    color: var(--corletrabotao);
+}
+
+.btn-login{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: var(--corletrabotao);
+    background: var(--corlogin);
+    cursor: pointer;
+    box-shadow: 0px 10px 40px 12px rgba(0, 0, 139, 0.37)
+}
+
+a{
+    color: var(--corlogin);
+    text-decoration: none;
+}

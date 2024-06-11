@@ -1,0 +1,39 @@
+ @charset "UTF-8";
+
+header{
+    text-align: center;
+    background-color: #262626;
+    font-size: 20px;
+    color: lightblue;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color:#BFBFBF
+}
+
+main{
+    text-align: center;
+    background-color: #262626;
+    font-size: 20px;
+    padding: 50px;
+
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:  #404040;
+    padding: 20px;
+}
+
+.box ul{
+    background-color: #262626;
+    border-radius: 20px;
+    box-shadow: 0 20px 10px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 600px;
+    margin: 100px auto;
+    color: #BFBFBF;
+}

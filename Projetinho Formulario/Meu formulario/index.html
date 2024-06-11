@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de trabalho</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div>
+        <h1 id="titulo">Venha trabalhar conosco!</h1>
+        <p id="subtitulo">Basta preencher o formulario abaixo</p>
+        <br>
+    </div>
+    
+    <form>
+        
+                <fieldset class="grupo">
+                    <div class="campo">
+                    <label for="nome"><strong>Nome e Sobrenome</strong></label>
+                    <input type="text" name="nome" id="nome" placeholder="seu nome e sobrenome" required>
+                    </div>
+                    <div class="campo">
+                        <label for="email"><strong>Email</strong></label>
+                        <input type="email" name="email" id="email"  required placeholder="seu email">
+                    </div>
+        
+                </fieldset>
+                <div class="campo">
+                <label><strong>De qual desses voçê tem mais facilidade?</strong></label>
+                <label>
+                    <input type="radio" name="atendimento" value="Garçom">Garçom
+                </label>
+                <label>
+                    <input type="radio" name="atendimento" value="bartender">Bartender
+                </label>
+                <input type="radio" name="atendimento" value="cozinheiro">Cozinheiro
+                <label>
+                    <input type="radio" name="atendimento" value="auxiliar">Auxiliar de cozinha
+                </label>
+                </div>
+                <div class="campo">
+                    <label for="idade"><strong>Qual sua idade</strong></label>
+                    <select id="idade">
+                        <option selected disabled value=""> selecione</option>
+                        <option>18 a 25</option>
+                        <option>25 a 30</option>
+                        <option>30 a 40</option>
+                        <option>40+</option>
+                    </select>
+                </div>
+                <div id="check">
+                <label><strong>Qual desses voçê tem?</strong></label> <br>
+                <label>
+                    <input type="checkbox" name="checkbox" id="comunicaçao"> Boa comuicação <br>
+                </label>
+                <label>
+                    <input type="checkbox" name="checkbox" id="experiencia"> Experiência em restaurantes
+                </label> <br>
+                <label>
+                    <input type="checkbox" name="checkbox" id="bebida">Conhecimento de drinks <br>
+                </label>
+                <label>
+                    <input type="checkbox" name="checkbox" id="trabalho">Trabalho em equipe <br>
+                </label>
+                <label>
+                    <input type="checkbox" name="checkbox" id="pontual">Pontualdade e confiabilidade
+                </label>
+                </div>
+                <div class="campo">
+                    <label><strong>Nos conte um pouco sobre sua experiência no mercado de tranalho</strong></label>
+                    <textarea rows="4" style="width: 22em;"id="mercado"></textarea>
+                </div>
+                <button class="botao" type="submit" onsubmit="">Concluído</button>
+            </form>
+            </body>
+</body>
+</html>
